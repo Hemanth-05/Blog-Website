@@ -1,0 +1,151 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F6F5F5;
+    text-align: justify;
+}
+
+h1{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#header{
+    display: flex;              /* Generally h1 will tend to have margin by default, making dispplay as flex removes it. If you are- */ 
+    align-items: center;        /* -not using flex then you would have to make the margin of h1 as 0 explictly */
+    width: 100%;
+    background-color: #0C359E;
+    color: #F6F5F5;
+    height: 8vh;
+    min-height: 40px;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.writingContent{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post{
+    padding: 5px;
+}
+
+.postingTitle{
+    width: 80%;
+}
+
+.postingDescription{
+    height: 10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.postingName{
+    width: 20%;
+    align-self: flex-end;
+}
+
+.postButton{
+    padding: 5px;
+    font-weight: 600;
+    align-self: center;
+}
+
+/* Post Viewing */
+
+hr{
+    width: 100%;
+}
+
+h3#postTitle{
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+.postingContent{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.blog{
+    background-color: #FFE3CA;
+    height: auto;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.date{
+    font-size: 0.7em;
+    margin: 0px;
+    text-align: right;
+}
+
+.blogTitle{
+    margin: 0px;
+}
+
+.byWho{
+    text-align: right;
+    margin: 0px;
+    margin-right: 5px;
+    font-style: italic;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0C359E;
+    height: 5vh;
+    color: #F6F5F5;
+    margin-top: 20px;
+}
+
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .container{
+        width: 90%;
+    }
+
+    .writingContent, .postingTitle, .postingName, .postingDescription{
+        width: 100%;
+    }
+
+    .postingName{
+        align-self: flex-start;
+    }
+
+    h3#postTitle{
+        align-self: center;
+    }
+
+    #header{
+        justify-content: center;
+    }
+
+  }
